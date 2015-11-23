@@ -1,10 +1,9 @@
 package br.aeso.aula20;
 import static org.junit.Assert.*;
 import org.junit.Test;
-
 public class TestaMaiorEMenorJUnit {
 	@Test
-	public void ValidandoCarrinhoDeCompra() {
+	public void testeMaiorEMenorProduto() {
 		CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
 		carrinho.adiciona(new Produto("Liquidificador", 250.0));
 		carrinho.adiciona(new Produto("Geladeira", 450.0));

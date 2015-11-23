@@ -1,5 +1,4 @@
 package br.aeso.aula20;
-
 public class MaiorEMenor {
 	private Produto menor;
 	private Produto maior;
