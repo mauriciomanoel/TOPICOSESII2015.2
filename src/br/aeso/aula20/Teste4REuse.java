@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 public class Teste4REuse {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://www2.4reuse.info/autenticacao");
 		WebElement campoNome = driver.findElement(By.name("usuario"));
@@ -16,5 +16,8 @@ public class Teste4REuse {
 		
 		WebElement botaoSalvar = driver.findElement(By.id("btn_submit"));
 		botaoSalvar.click();
+		Thread.sleep(2000);
+		boolean achouNome = driver.getPageSource().contains("Home1111");
+		System.out.println(achouNome);
 	}
 }

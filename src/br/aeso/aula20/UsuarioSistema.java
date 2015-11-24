@@ -8,8 +8,8 @@ public class UsuarioSistema {
 	public static void main(String[] args) {
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://localhost:8080/new");
-		WebElement campoNome = driver.findElement(By.name("q"));
-		WebElement campoEmail = driver.findElement(By.name("q"));
+		WebElement campoNome = driver.findElement(By.name("nome"));
+		WebElement campoEmail = driver.findElement(By.name("email"));
 		
 		campoNome.sendKeys("Mauricio");
 		campoEmail.sendKeys("mauricio@gmail.com");
